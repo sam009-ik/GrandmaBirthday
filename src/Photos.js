@@ -8,7 +8,7 @@ import { useEffect, useState, useRef } from 'react';
 
 const Photos = () => {
   const imageCount = 26; // Total number of images
-  const imageSrcs = Array.from({ length: imageCount }, (_, index) => `/img/nani${index + 1}.jpg`);
+  const imageSrcs = Array.from({ length: imageCount }, (_, index) => `img/nani${index + 1}.jpg`);
   const audioRef = useRef(null); // Reference to the audio element
 
   const playAudio = () => {
@@ -24,7 +24,7 @@ const Photos = () => {
       <button onClick={playAudio} className="play-audio-btn"></button>
 
       <audio ref={audioRef} className="audio-element" loop>
-        <source src="/music.mp3" type="audio/mp3" />
+        <source src="music.mp3" type="audio/mp3" />
       </audio>
 
       <div className="carousel-container"> {/* Apply the custom class */}
