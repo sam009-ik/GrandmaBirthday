@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+
+import HomePage from './homePage';
+import Photos from './Photos'; // Assuming the filename is Photos.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/photos" element={<Photos />} />
+      </Routes>
+    </Router>
   );
 }
 

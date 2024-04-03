@@ -1,0 +1,76 @@
+/* Photos.css */
+
+/* Photos.css */
+
+.carousel-container {
+    padding-top: 40px; /* Add some space at the top of the carousel */
+  }
+  
+  .carousel {
+    max-width: 100%; /* Make the carousel span the full width */
+  }
+  
+  .carousel-item img {
+    max-height: 70vh; /* Limit the height of the images */
+    object-fit: contain; /* Ensure the images fit within the dimensions and maintain aspect ratio */
+    width: 100%; /* Make images fill their container's width */
+  }
+
+  
+  /* Photos.css */
+  .photo-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6f4e37; /* Warm color for the text */
+    background-color: #f0eae3; /* Soft background color for contrast */
+    padding: 10px 0;
+    font-family: 'Times New Roman', Times, serif; /* Classic font for an oldish vibe */
+    font-size: 28px; /* Slightly larger font size for the header */
+  }
+  .carousel-container {
+    position: relative;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: invert(100%); /* This will make the arrows white, change as needed */
+    z-index: 2;
+  }
+  
+  /* Optional: Add background to carousel arrows for visibility */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 50%; /* Circular background */
+  }
+  
+
+/* Photos.css */
+.play-audio-btn {
+    position: fixed;
+    top: 5px;
+    right: 50px;
+    width: 60px; /* Specific width for a round shape */
+    height: 60px; /* Same height to make it perfectly circular */
+    line-height: 50px; /* Adjust line height to vertically center the text/icon */
+    text-align: center;
+    font-size: 24px; /* Larger font size for the icon */
+    background-color: #f0e6eb;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Fully round corners for a circle */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .play-audio-btn:hover {
+    background-color: #627e72;
+  }
+  
+  .play-audio-btn::before {
+    content: '▶'; /* Using a pseudo-element for the play icon */
+    display: block;
+  }
